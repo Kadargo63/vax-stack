@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
 app.use("/uploads", express.static("uploads"));
 
 // for sync or migrate db
-// { force:true } for alter table
+// { force:true } for alter table 
 // db.sequelize.sync();
 
 // set port, listen for requests
