@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+#menu-toggle:checked+#menu {
+    display: flex;
+}
+
+.react-datepicker-wrapper {
+    width: 100%;
+}
+
+table.table,
+tr,
+td {
+    padding: 10px;
+    border: 1px solid rgb(224, 224, 224);
+    text-align: left;
+}
+
+{}
