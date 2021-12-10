@@ -1,9 +1,5 @@
 <h1 align="center">
     <br>
-    <a href="live site url">
-        <img src="logo" alt="VaxStackUrl" width="150">
-    </a>
-    <br>
     VaxStack
     <br>
 </h1>
