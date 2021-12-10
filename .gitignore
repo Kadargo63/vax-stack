@@ -7,8 +7,6 @@ uploads
 
 .env
 
-package-lock.json
-
 # production
 build
 
