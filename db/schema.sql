@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS vax_stack;
+
+CREATE DATABASE vax_stack;
