@@ -1,0 +1,329 @@
+/* GLOBAL STYLES */
+
+:root {
+    --primary: #242424;
+    --secondary: #e0e0e0;
+    --tertiary: #616161;
+    --pink: #15ecb6;
+    --dark: #119791;
+    --blue: #05d880;
+    --border-gray: #d1d1d1;
+    --border-radius: 0.5rem;
+  }
+  
+  * {
+      box-sizing: border-box;
+      font-family: "Roboto", sans-serif;
+    }
+    
+    body {
+      background-image: url(../assets/clean-medical-background_53876-116875.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: var(--dark);
+    }
+    
+  
+  /* TEXT STYLES */
+  
+  .link-color {
+      color: var(--tertiary);
+      padding: 10px;
+      margin: 10px;
+    }
+    
+    .header-page {
+        color: white;
+        padding-bottom: 20px;
+    }
+  
+  h1,
+  h2,
+  h3,
+  h5,
+  h6 {
+    font-weight: 700;
+    margin: 0;
+    color: var(--dark);
+    line-height: 1.25;
+  }
+  
+  p {
+      font-size: 16px;
+    }
+  
+  .italic {
+      font-style: italic;
+  }
+  
+  .text-uppercase {
+      text-transform: uppercase;
+    }
+  
+  /* LAYOUT */
+  
+  main {
+    margin: 100px auto;
+    width: 80%;
+  }
+  
+  .wrapper {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+  }
+  
+  
+  /* BUTTONS */
+  
+  .btn {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+    width: fit-content;
+    margin: 8px 4px;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    outline: none;
+    height: fit-content;
+    background-color: var(--blue);
+    transition: transform .2s;
+  }
+  
+  .btn:hover {
+      transform: scale(1.1);
+      z-index: 1;
+      cursor: pointer;
+      color: white;
+  }
+  
+  .btn-inline {
+    display: inline;
+  }
+  
+  .btn-outline{
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 40px;
+      text-decoration: none;
+      padding: 0px 20px 0px 20px;
+      width: fit-content;
+      margin: 8px 4px;
+      border-radius: 20px;
+      color: var(--blue);
+      border: 1px solid #010BE6;
+      background-color: #010ce600;
+      outline: none;
+      height: fit-content;
+      transition: transform .2s;
+    }
+  
+    .btn-outline:hover {
+      transform: scale(1.1);
+      z-index: 1;
+      cursor: pointer;
+      color: var(--blue);
+  }
+  
+  /* HEADER */
+  
+  .page-header {
+      margin: 0;
+      top: 0;
+      width: 100%;
+      position: fixed;
+      height: fit-content;
+      background-color: var(--dark);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      z-index: 1;
+      padding: 20px 10% 20px 10%;
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  @media only screen and (max-width: 600px) {
+      .page-header {
+          margin: 0;
+          top: 0;
+          width: 100%;
+          position: fixed;
+          height: fit-content;
+          background-color: var(--dark);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          z-index: 1;
+          padding: 20px 10% 20px 10%;
+          flex-direction: column;
+          display: flex;
+          justify-content: space-between;
+      }
+      }
+  
+  .app-title-container {
+      flex-direction: row;
+      column-gap: 12px;
+      display: flex;
+  }
+  
+  .app-title {
+    font-size: 28px;
+    letter-spacing: -1px;
+    color: var(--pink);
+    padding-top: 16px;
+  }
+  
+  .list-group {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .list-item {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    border-radius: var(--border-radius);
+    background-color: var(--pink);
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  .list-item:hover {
+    background-color: var(--dark);
+  }
+  
+  .status-icon {
+    padding: 2px 5px;
+    margin: 0 5px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: var(--border-radius);
+  }
+  
+  /* CARDS */
+  
+  .card {
+    margin: 0 0 20px 0;
+    border-radius: var(--border-radius);
+    background-color: rgba(255, 255, 255, 0.795) !important;
+    backdrop-filter: blur(12px);
+  }
+  
+  .card-header {
+    color: var(--primary);
+    padding: 1% 2% 1% 2%;
+    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+    height: fit-content;
+  }
+  
+  .card-body {
+      padding: 2%;
+  }
+  
+  h4 {
+    font-weight: 700;
+    margin: 0;
+    color: var(--pink);
+    line-height: 1.50;
+    font-size: 28px;
+  }
+  
+  /* LINKS */
+  
+  .link {
+    color: var(--primary);
+    text-decoration: none;
+  }
+  
+  .link-button {
+      color: white;
+      text-decoration: none;
+    }
+  
+  .link-blue {
+      color: var(--blue);
+      text-decoration: none;
+    }
+  
+  .login-link {
+    color: var(--dark);
+  }
+  
+  .light-link {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      padding-right: 12px;
+      margin-bottom: 0px;
+    }
+  
+    /* SEMANTIC ITEMS */
+  
+  .nav {
+    padding: 12px;
+    line-height: 40px;
+  }
+  
+  footer {
+    border-top: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    font-size: 110%;
+  }
+  
+  /* INPUTS */
+  
+  .form-label,
+  .form-input,
+  .form-textarea {
+    display: block;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    margin-top: 12px;
+    color: var(--primary);
+    font-weight: 700;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  
+  .form-input {
+    width: 80%;
+    padding: 8px 12px 12px 8px;
+    margin-top: 12px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    border: 2px solid var(--border-gray);
+    border-radius: var(--border-radius);
+  }
+  
+  /* FLEX LAYOUTS */
+  
+  .form-button-layout {
+      padding-left: 10%; 
+      padding-right: 10%;
+      padding-top: 12px;
+  }
+  
+  .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
