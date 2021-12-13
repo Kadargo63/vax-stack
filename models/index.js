@@ -2,7 +2,9 @@ const User = require('./User');
 const Appointment = require("./Appointment");
 
 // create associations
-User.hasOne(Appointment, {
+
+User.hasMany(Appointment, {
+
     foreignKey: 'user_id'
 });
 Appointment.belongsTo(User, {

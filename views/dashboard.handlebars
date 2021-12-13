@@ -1,0 +1,14 @@
+{{#if appointments.length}}
+<section>
+  <h2 class="header-page">Scheduled Services</h2>
+    {{#each appointments as |appointment|}}
+      {{> dashboard-appointmentinfo appointment}}
+      <a href="/dashboard/edit/{{appointment.id}}" class="edit-link">Edit Appointment</a>
+    {{/each}}
+
+</section>
+{{/if}}
+
+<button type="submit" class="btn"><a class="link-button" href="/dashboard/new">+ New Appointment</a></button>
+
+<script src="/javascript/add-appointment.js"></script>
